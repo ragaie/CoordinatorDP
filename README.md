@@ -84,7 +84,8 @@ will find this in class .</br>
 # Wait next one will be for tabBar app.
 
 # Thanks for reading. 
-      All you welcome for discuss or any modify or aading point.
+      All yours welcome for discuss or any modify or adding point.
+      
 * **Ref**  - [raywenderlich](https://www.raywenderlich.com/158-coordinator-tutorial-for-ios-getting-started)
 
 ## Author
