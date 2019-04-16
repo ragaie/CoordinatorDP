@@ -26,21 +26,39 @@ will find this in class .</br>
  }
 ```
  //you find func for push and set, and you can add what you need else as it done for another funcs.
+
+# first to add in appdelaget start :
+
+```
+  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        
+        // Override point for customization after application launch.
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        AppCoordinator.shared =  AppCoordinator.init(window: self.window!) // 2
+        
+
+        /// init first view controller for app
+        let viewcontroller1 = UIViewController.initWith(storyBoardName: UIStoryboard.identifer.main.rawValue, viewControllerId: UIViewController.identifier.firstView.rawValue)
+        
+        
+        //set root view controller
+        AppCoordinator.shared?.setRootViewController(viewController: viewcontroller1)
+        
+        
+        //start coordinator with with first root
+        AppCoordinator.shared?.start()  // 3
+        return true
+    }
+
+```
 # what we have else in project to reach one of (SOLID) single responsiblity  :-
 
 1-that will find extenstion for storyBoard </br>
     . enum for storyBoard name of your project, to save them all in one place.</br>
-    ```
-       enum identifer : String {
-        case main = "Main"
-        
-    }
-    
-    ```
-  
-2- Extenstion for UIViewController :</br>
-    . enum for screen name, or viewController id.</br>
-    
+ 2- Extenstion for UIViewController :</br>
+      . enum for screen name, or viewController id.</br>
+
     ```
       enum identifier : String {
         
@@ -66,7 +84,8 @@ will find this in class .</br>
 
 # Wait next one will be for tabBar app.
 
-# Thanks for reading.
+# Thanks for reading. 
+      All you welcome for discuss or any modify or aading point.
 * **Ref**  - [raywenderlich](https://www.raywenderlich.com/158-coordinator-tutorial-for-ios-getting-started)
 
 ## Author
