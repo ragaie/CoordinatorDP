@@ -7,7 +7,7 @@ Coordinator Design Pattern for simple app with have side menu or normal app with
 
 
 This not library or perfect example for coordinator, (just show case of use).</br>
-You neeed to modify it and add extra func for it to fit your business.</br>
+You neeeeeed to modify it and add extra func for it to fit your business.</br>
 
 # let's start :
 
