@@ -30,9 +30,28 @@ will find this in class .</br>
 
 1-that will find extenstion for storyBoard </br>
     . enum for storyBoard name of your project, to save them all in one place.</br>
+    ```
+       enum identifer : String {
+        case main = "Main"
+        
+    }
+    
+    ```
   
 2- Extenstion for UIViewController :</br>
     . enum for screen name, or viewController id.</br>
+    
+    ```
+      enum identifier : String {
+        
+        case firstView  = "viewID"
+        case secandView = "secandID"
+        case demo1 = "demo1"
+
+        
+    }
+    
+    ```
     . New func for create viewcontroller form storyborad with storyboard name and view controller id.</br>
     
     ```
@@ -42,8 +61,8 @@ will find this in class .</br>
         
     }
     
-    ```
-    . You can use already exist func for load view controller form nib file.</br>
+    ``` 
+   . You can use already exist func for load view controller form nib file.</br>
 
 # Wait next one will be for tabBar app.
 
